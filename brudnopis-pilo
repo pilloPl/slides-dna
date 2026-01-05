@@ -171,21 +171,9 @@ Architekt / senior decyduje:
 
 ---
 
-## FDE: feedback-driven engineering
+## FDE: 
 
-AI:
-- generuje kod  
-- testy  
-- refaktory  
-
-Ale:
-- tylko człowiek widzi skutki w systemie  
-
-➡️ Rola developera przesuwa się w stronę:
-- decyzji  
-- oceny skutków  
-- korekty kierunku  
-
+tODO
 ---
 
 ## Co się realnie zmienia w roli developera?
