@@ -464,18 +464,6 @@ Spec:
 To nie jest dokumentacja.
 To są **reguły systemu**.
 
----
-
-## Kluczowa jednostka spec-driven: agregat
-
-Agregat to:
-➡️ **jednostka transakcji**
-➡️ **granica niepodzielności zmiany**
-➡️ **commit biznesowy**
-
-Albo:
-- wszystko się zmienia razem  
-- albo system jest w złym stanie
 
 ---
 
@@ -525,29 +513,6 @@ To wystarczy.
 
 ---
 
-## Kiedy masz agregat?
-
-Zadaj pytania:
-- czy mogę zapisać A bez B?
-- czy biznes zaakceptuje stan pośredni?
-- czy cofnięcie części jest OK?
-
-Jeśli:
-➡️ odpowiedź brzmi „nie”  
-➡️ **to jest agregat**
-
----
-
-## Kiedy nie budować agregatu?
-
-Nie buduj, jeśli:
-- rollback jest tani
-- niespójność chwilowa jest OK
-- domena jeszcze się zmienia
-
-➡️ Spec kosztuje. Używaj jej świadomie.
-
----
 
 ## Po co ta spec?
 
@@ -586,14 +551,6 @@ To jest **architektura systemu**.
 
 ---
 
-## Jak to przekuć na biznes?
-
-Nie mów:
-> „chronimy agregaty”
-
-Mów:
-> „chronimy system przed stanami,  
-> których nie da się naprawić automatycznie”
 
 ➡️ Biznes rozumie koszt i ryzyko.
 
@@ -606,8 +563,6 @@ Spec-driven:
 - skraca feedback loop
 - pozwala używać AI bez chaosu
 
-Agregat:
-- to miejsce, gdzie AI potrzebuje guardrail
 
 Kto to rozumie:
 ➡️ realnie buduje przewagę konkurencyjną
