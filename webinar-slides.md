@@ -19,10 +19,8 @@ style: |
 
 <br>
 
-> bla bla
+> bla bla  
 bla bla bla
-
-
 
 <br>
 Łukasz Szydło<br>
@@ -43,6 +41,57 @@ Kuba Kubryński
 
 ➡️ To nie wada  
 ➡️ To **moment przełomowy**
+
+---
+
+## Brak dobrych praktyk – doprecyzujmy
+
+To **nie** jest problem:
+- pisania promptów  
+- generowania frontendu  
+- tworzenia testów z agentów  
+
+To wszystko:
+✔️ już działa  
+✔️ jest ważne  
+✔️ ale **nie jest odkrywcze**
+
+---
+
+## To jest poziom tasków
+
+- „zrób mi komponent”  
+- „napisz test”  
+- „zrefaktoruj ten kod”  
+
+➡️ zwiększa produktywność  
+➡️ nie zmienia organizacji
+
+---
+
+## Prawdziwa luka jest wyżej
+
+Brakuje dobrych praktyk w zakresie:
+- **pełnego SDLC**  
+- **architektury enterprise**  
+- **procesów wytwórczych**
+
+Takich, które zakładają, że:
+➡️ AI jest **częścią systemu**, a nie dodatkiem
+
+---
+
+## AI jako first class citizen
+
+Nie:
+- chatbot  
+- feature  
+- eksperyment R&D  
+
+Tylko:
+- element architektury  
+- uczestnik procesu  
+- aktor w SDLC
 
 ---
 
@@ -150,4 +199,3 @@ AI:
 ➡️ dlaczego AI w korpo jest oderwane od SDLC  
 ➡️ dlaczego Data Science ≠ inżynieria  
 ➡️ dlaczego chaos da się wykorzystać, a nie tylko gasić
-
