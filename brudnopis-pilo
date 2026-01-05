@@ -1,0 +1,230 @@
+---
+
+# 5. Jak to wpływa na rolę developera i architekta
+
+---
+
+## Technologia buduje przewagę konkurencyjną
+
+Ale nie sama technologia.
+
+➡️ **Przewagę buduje ktoś, kto potrafi ją zastosować w systemie i procesie**
+
+Biznes:
+- nie wymyśli MCP  
+- nie wymyśli agentów  
+- nie wymyśli pluginów  
+- nie zna ograniczeń LLM  
+
+➡️ **To nie jest ich rola**
+
+---
+
+## Nowa odpowiedzialność po stronie technicznej
+
+Jeśli AI:
+- zmienia sposób wytwarzania  
+- zmienia tempo dostarczania  
+- zmienia architekturę  
+
+➡️ to **developer i architekt** muszą:
+- zaproponować rozwiązania  
+- ocenić ryzyko  
+- ustawić procesy  
+
+---
+
+## Przykład: MCP w e-commerce
+
+Biznes nigdy nie powie:
+> „Zbudujmy MCP do produktów”
+
+Bo:
+- nie wiedzą, że MCP istnieje  
+- nie wiedzą, że LLM może konsumować dane produktowe  
+- nie wiedzą, że agent może działać na katalogu  
+
+---
+
+## Kto to zaproponuje?
+
+➡️ **Architekt / senior dev**, który:
+- zna MCP  
+- rozumie architekturę e-commerce  
+- zna ograniczenia LLM (kontekst, latencja, koszty)  
+
+I potrafi powiedzieć:
+> „Jeśli wystawimy produkty jako MCP, to:
+> - agenty będą mogły je eksplorować
+> - support i sales dostaną nowe możliwości
+> - skrócimy time-to-value”
+
+---
+
+## To nie jest hype — to decyzja architektoniczna
+
+Architekt musi wiedzieć:
+- jak wersjonować MCP  
+- jak zabezpieczyć dostęp  
+- jak ograniczyć scope danych  
+- gdzie MCP ma granice  
+
+➡️ **To jest architektura systemu**, nie demo.
+
+---
+
+## Pluginowość = realna przewaga
+
+AI dramatycznie:
+- zwiększa liczbę zmian  
+- zwiększa liczbę autorów kodu  
+- zwiększa chaos kontekstowy  
+
+➡️ **Pluginowa architektura staje się krytyczna**
+
+---
+
+## Dlaczego pluginowość jest ważniejsza niż wcześniej?
+
+Bo:
+- agent nie ogarnia monolitu  
+- LLM działa lepiej w małym kontekście  
+- mniejszy kontekst = lepsze decyzje  
+
+➡️ Plugin:
+- ma jasne API  
+- ma ograniczony scope  
+- da się testować osobno  
+
+---
+
+## Rola architekta: bronić pluginowości
+
+Nie tylko w kodzie.
+
+Ale w:
+- review  
+- standardach  
+- decyzjach „na szybko”  
+
+Architekt musi umieć powiedzieć:
+> „Nie, nie wrzucamy tego do core — to powinien być plugin”
+
+Bo:
+- AI przyspiesza złe decyzje tak samo jak dobre
+
+---
+
+## Code review w świecie AI
+
+AI:
+- pisze więcej kodu  
+- szybciej  
+- czasem bez zrozumienia kontekstu  
+
+➡️ **Code review nie może być już tylko stylem i testami**
+
+---
+
+## Nowy cel code review
+
+Chronić:
+- architekturę  
+- granice kontekstów  
+- pluginowość  
+- odpowiedzialności modułów  
+
+Pytania w review:
+- czy ten kod łamie granice?
+- czy agent nie „wciągnął” za dużo?
+- czy to da się wyciąć jako plugin?
+
+---
+
+## AI w SDLC — ktoś musi to wdrożyć
+
+AI nie „wchodzi samo” w SDLC.
+
+Ktoś musi:
+- zaprojektować onboarding agenta  
+- określić gdzie AI może commitować  
+- ustawić role: sugestia vs decyzja  
+- określić odpowiedzialność człowieka  
+
+➡️ To jest **design procesu**, nie toola.
+
+---
+
+## Onboarding agenta ≠ prompt
+
+To:
+- dostęp do repo  
+- zakres odpowiedzialności  
+- kontekst domenowy  
+- zasady eskalacji  
+
+Architekt / senior decyduje:
+> „Ten agent:
+> - może refaktoryzować pluginy
+> - nie może zmieniać core
+> - wymaga review człowieka”
+
+---
+
+## FDE: feedback-driven engineering
+
+AI:
+- generuje kod  
+- testy  
+- refaktory  
+
+Ale:
+- tylko człowiek widzi skutki w systemie  
+
+➡️ Rola developera przesuwa się w stronę:
+- decyzji  
+- oceny skutków  
+- korekty kierunku  
+
+---
+
+## Co się realnie zmienia w roli developera?
+
+Mniej:
+- pisania boilerplate  
+- ręcznego klepania  
+
+Więcej:
+- decyzji architektonicznych  
+- pracy na granicach systemu  
+- rozumienia całości  
+
+---
+
+## Co się realnie zmienia w roli architekta?
+
+Architekt:
+- nie tylko „rysuje diagramy”  
+- ale **aktywnie ustawia system pod AI**
+
+Decyduje:
+- gdzie AI ma wejść  
+- gdzie nie  
+- jak chronić system przed chaosem  
+
+---
+
+## Podsumowanie
+
+AI nie zabiera roli developera ani architekta.
+
+AI:
+- **podnosi poprzeczkę**
+
+Wygrywają ci, którzy:
+- rozumieją architekturę  
+- rozumieją SDLC  
+- rozumieją ograniczenia AI  
+- potrafią zaproponować konkretne rozwiązania
+
+➡️ **To jest miejsce, gdzie buduje się przewagę konkurencyjną**
