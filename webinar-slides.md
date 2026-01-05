@@ -200,11 +200,9 @@ Byliśmy i jesteśmy w firmach:
 
 ## Czy to są best practices?
 
-Szczerze?
-
 **Może**
 
-Ale na pewno mamy:
+Ale **na pewno** mamy:
 - powtarzalne obserwacje  
 - wnioski, które nie rozpadły się po kwartale  
 - rzeczy niezależne od konkretnego narzędzia
@@ -218,16 +216,16 @@ Bo opierają się na:
 
 ## Kto może zbudować pozycję w tym chaosie?
 
-Nie ten, kto:
-- zna najlepsze prompty  
-- ma ulubionego agenta  
-- dowiózł jeden POC
-
 ➡️ tylko ten, kto **potrafi chaos wykorzystać**
 
 ---
 
 ## Kto wygra ten chaos?
+
+Nie ten, który tylko:
+- zna najlepsze prompty  
+- ma ulubionego agenta i pisze fajne skillsy  
+- dowiózł jeden POC
 
 Ten, kto rozumie:
 - **security i governance**  
@@ -246,7 +244,6 @@ To już nie jest:
 To zaczyna być:
 - ktoś, kto **rozumie nowy krajobraz**  
 - ktoś, kto **łączy AI z architekturą**  
-- ktoś, kogo pyta się: *„czy to ma sens?”*
 
 ---
 
