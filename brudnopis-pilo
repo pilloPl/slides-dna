@@ -441,3 +441,174 @@ Wygrywają te, które:
 To jest trudne.  
 Dlatego jest przewagą.
 
+
+---
+
+## Spec-driven zamiast „AI pisze kod”
+
+AI:
+- potrafi zmieniać kod
+- nie rozumie transakcji
+- nie rozumie konsekwencji biznesowych
+
+➡️ Dlatego potrzebujemy **spec-driven podejścia**
+
+---
+
+## Co to znaczy „spec-driven”?
+
+Spec:
+- nie opisuje jak coś działa
+- opisuje **kiedy zmiana jest poprawna, a kiedy nie**
+
+To nie jest dokumentacja.
+To są **reguły systemu**.
+
+---
+
+## Kluczowa jednostka spec-driven: agregat
+
+Agregat to:
+➡️ **jednostka transakcji**
+➡️ **granica niepodzielności zmiany**
+➡️ **commit biznesowy**
+
+Albo:
+- wszystko się zmienia razem  
+- albo system jest w złym stanie
+
+---
+
+## Problem z AI
+
+AI widzi:
+- pliki
+- funkcje
+- testy
+
+Nie widzi:
+- że te zmiany muszą wydarzyć się razem
+- że stan pośredni jest nieakceptowalny
+- że rollback jest drogi
+
+➡️ AI idealnie łamie agregaty
+
+---
+
+## Przykład (intuicyjny)
+
+Zmiana:
+- statusu zamówienia
+- płatności
+- rezerwacji stocku
+
+Technicznie:
+- trzy różne miejsca
+
+Biznesowo:
+- **jedna transakcja**
+
+➡️ To jest agregat
+
+---
+
+## Spec agregatu (minimalna)
+
+Nie piszemy elaboratów.
+
+Spec mówi:
+- co MUSI zmienić się razem
+- czego NIE WOLNO zmienić osobno
+- jaki stan jest biznesowo niepoprawny
+
+To wystarczy.
+
+---
+
+## Kiedy masz agregat?
+
+Zadaj pytania:
+- czy mogę zapisać A bez B?
+- czy biznes zaakceptuje stan pośredni?
+- czy cofnięcie części jest OK?
+
+Jeśli:
+➡️ odpowiedź brzmi „nie”  
+➡️ **to jest agregat**
+
+---
+
+## Kiedy nie budować agregatu?
+
+Nie buduj, jeśli:
+- rollback jest tani
+- niespójność chwilowa jest OK
+- domena jeszcze się zmienia
+
+➡️ Spec kosztuje. Używaj jej świadomie.
+
+---
+
+## Po co ta spec?
+
+Bo:
+- testy tego nie wyrażą
+- typy tego nie złapią
+- AI tego nie zgadnie
+
+Spec:
+➡️ przenosi wiedzę architektoniczną do systemu
+
+---
+
+## Spec → agent
+
+Agent w code review:
+- nie sprawdza „czy działa”
+- sprawdza „czy nie rozcięto agregatu”
+
+> „Ta zmiana dotyka tylko części transakcji”
+
+➡️ Guardrail, nie automat
+
+---
+
+## Co tu robi architekt?
+
+Architekt:
+- identyfikuje agregaty
+- zapisuje ich reguły
+- decyduje gdzie AI może działać
+- gdzie musi się zatrzymać
+
+To nie jest governance.
+To jest **architektura systemu**.
+
+---
+
+## Jak to przekuć na biznes?
+
+Nie mów:
+> „chronimy agregaty”
+
+Mów:
+> „chronimy system przed stanami,  
+> których nie da się naprawić automatycznie”
+
+➡️ Biznes rozumie koszt i ryzyko.
+
+---
+
+## Podsumowanie
+
+Spec-driven:
+- nie spowalnia
+- skraca feedback loop
+- pozwala używać AI bez chaosu
+
+Agregat:
+- to miejsce, gdzie AI potrzebuje guardrail
+
+Kto to rozumie:
+➡️ realnie buduje przewagę konkurencyjną
+
