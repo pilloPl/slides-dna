@@ -27,7 +27,6 @@ Dobry architekt (albo bardzo doświadczony senior):
 ---
 
 ## Co było trudne
- my
 - nie dało się tego łatwo:
   - przetestować
   - opisać w typach
@@ -385,6 +384,107 @@ Efekt:
 - audyt?
 
 ### 4) Koszty i ograniczenia LLM
+
+---
+
+# Kolejny przykład: reguły, których nie da się wymusić ręcznie
+
+---
+
+## Przykład: „strażnik” między tabelami
+
+Mamy moduł:
+- 4 tabele
+- jedna z nich pełni rolę **strażnika spójności**
+- przy **każdej** zmianie w pozostałych:
+  - ta jedna **musi być zablokowana / zaktualizowana razem**
+
+Biznesowo:
+- to **jedna operacja**
+- technicznie:
+  - kilka miejsc
+  - kilka ścieżek dostępu
+
+---
+
+## Kiedyś
+
+Architekt/Senior Dev:
+- zaprojektował enkapsulację
+- ukrył bezpośredni dostęp
+- zabezpieczył „normalne” ścieżki
+
+I dodatkowo:
+- napisał ADR
+- wytłumaczył zespołowi
+- przypominał na review
+- liczył na zdrowy rozsądek
+
+➡️ **Reguła istniała głównie w głowach**
+
+---
+
+## Dlaczego to nie zawsze działało
+
+Bo w końcu ktoś mówi:
+> „To ja tylko na chwilę”  
+> „To szybki fix”  
+> „Architekt jest na urlopie”
+
+Technicznie:
+- da się obejść
+- testy mogą nie złapać
+
+➡️ **System pozwalał na złamanie reguły**
+
+---
+
+## Co było frustrujące
+
+- ADR przeczytany raz
+- edukacja działa do pierwszej presji
+- review nie zawsze złapie kontekst
+- regresja wychodzi po czasie
+
+---
+
+## Teraz
+
+Nie próbujemy już:
+- wymuszać wszystkiego edukacją
+- liczyć na pamięć zespołu
+- pilnować każdej zmiany
+
+➡️ **Reguła trafia do systemu jako guardian**
+
+---
+
+## Guardian w SDLC
+
+Guardian / skill:
+- zna regułę:
+  > „Zmiana w którejkolwiek z tych tabel  
+  > wymaga synchronizacji z tabelą-strażnikiem”
+
+Działa:
+- przy PR
+- przy refaktorze
+- przy zmianach generowanych przez AI
+
+➡️ **Sugeruje, nie blokuje**
+
+---
+
+## Ten sam scenariusz — teraz
+
+Ktoś zmienia jedną z tabel:
+- testy przechodzą
+- kod się kompiluje
+- „technicznie OK”
+
+Guardian w review:
+> „Ta zmiana dotyka tabeli X.  
+> Czy uwzględniono aktualizację tabeli-straż
 
 ---
 
