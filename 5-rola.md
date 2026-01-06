@@ -379,11 +379,7 @@ Efekt:
 
 ---
 
-# Kolejny przykład: reguły, których nie da się wymusić ręcznie
-
----
-
-## Przykład: „strażnik” między tabelami
+## Przykład: reguły, których nie da się wymusić ręcznie
 
 ---
 
@@ -537,9 +533,10 @@ Architekt / senior:
 > - nie może zmieniać core
 > - wymaga review człowieka”
 
+TODO alll: co tu powiedziec? odniesienie do narzedzi z poprzednich Waszych punktow, byloby idealne
 ---
 
-## Dlaczego ta rola (architekta, inżyniera produktowego) ewoluuje w FDE
+## Dlaczego ta rola (architekta, dobrego seniora) ewoluuje w FDE
 
 ---
 
@@ -547,8 +544,8 @@ Architekt / senior:
 
 FDE to nie jest:
 - „architekt od diagramów”
-- „spec od promptów”
-- „AI developer”
+- "spec od promptów”
+- AI developer
 
 FDE to osoba, która:
 - **rozumie kontekst biznesowy**
@@ -561,7 +558,7 @@ I potrafi:
 - FDE:
   - widzi **nowe kanały (np. agenty, MCP)** wcześniej niż biznes
   - potrafi je **bezpiecznie osadzić w architekturze**
-  - zna koszty, ryzyka i granice
+  - zna koszty, ryzyka i granice (wie kiedy tego nie zastosować)
 
 ➡️ **Dzięki AI zarządza kontekstem szybciej i bliżej biznesu niż kiedyś**
 
@@ -571,15 +568,7 @@ I potrafi:
 
 FDE:
 - nie sprzedaje hype’u
-- nie obiecuje „AI wszystko zrobi”
 - **dowodzi decyzje architektoniczne**
-
-Bo wie:
-- co wolno wystawić
-- czego nie wolno
-- jak wersjonować
-- jak zabezpieczyć
-- kiedy powiedzieć „nie”
 
 ➡️ Taki człowiek:
 - skraca time-to-value
